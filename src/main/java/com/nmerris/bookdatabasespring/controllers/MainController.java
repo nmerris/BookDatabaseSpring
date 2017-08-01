@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 
+    // not sure about get, post, request mapping for all
 
     @RequestMapping("/")
     public String defaultPage(Model model) {
@@ -51,7 +52,7 @@ public class MainController {
         return "deletebook";
     }
 
-
+    // postmapping here?
     @RequestMapping("/showallbooks")
     public String showAllBooks(Model model) {
         model.addAttribute("message", "This is a list of all books");
